@@ -5,7 +5,6 @@ import { SettingsPanel } from '../components/Settings'
 import { Toolbox } from '../components/Toolbox'
 import { Button, Container, Grid, GridColumn, Header, Segment } from 'semantic-ui-react'
 import { XButton } from '../components/user/Button'
-import { XText } from '../components/user/text'
 import { XContainer } from '../components/user/Container'
 import 'semantic-ui-css/semantic.min.css';
 import { XSegment } from '../components/user/Segment'
