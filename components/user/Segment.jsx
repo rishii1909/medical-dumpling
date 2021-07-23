@@ -3,16 +3,15 @@ import { Segment } from 'semantic-ui-react'
 import { Element, Canvas, useNode } from "@craftjs/core";
 
 
-export const XSegment = ({compact, circular, classname, color, padded, placeholder, loading, children}) => {
+export const XSegment = ({compact, circular, className, color, padded, placeholder, loading, basic, children}) => {
     const { connectors: {connect, drag} } = useNode();
     return(
         <div ref={ ref => connect(drag(ref))}>
         {/* <div> */}
-            <Segment compact={compact} circular={circular} className={classname} color={color} padded={padded} placeholder={placeholder} loading={loading}>
-                {/* <Element id="buttons" is={Segment} canvas> */}
+            <Segment compact={compact} circular={circular} className={className} color={color} basic={basic} padded={padded} placeholder={placeholder} loading={loading}>
+                {/* <Element id="buttons" canvas> */}
                 <Canvas id='Element_container'>
-                {children}
-
+                    {children}
                 </Canvas>
                 {/* </Element> */}
             </Segment>

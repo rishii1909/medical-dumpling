@@ -18,6 +18,7 @@ export const XButton = ({color, text}) => {
         <div 
         ref={ ref => connect(drag(ref))}
         onClick={e => setEditable(true)}
+        className='button-wrapper'
         >
             <Button color={color}> 
             

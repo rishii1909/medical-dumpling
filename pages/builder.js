@@ -14,21 +14,24 @@ import {Editor, Frame, Element} from "@craftjs/core";
 
 export default function Home() {
   return (
-    <Segment basic className='screen-height'>
-      <Editor resolver={{XButton, XSegment, XContainer, Button, Segment, Container}} >
-        <Grid celled className='full-height'>
+    <Segment>
+      <Header textAlign='center' dividing>Page builder prototype</Header>
+      <Editor resolver={{XButton, XSegment, XContainer, Button, Segment, Container}}>
+        <Grid celled>
           <GridColumn width='13'>
             <Frame>
-              <Element is={Segment} className='full-height' raised color='black' canvas>
-                  <XSegment className='min-full-height' basic>
-                  Add content here
-                  </XSegment>
+              <Element is={Segment} raised color='red' canvas>
+                  <XButton text='Button 1' />
+                  <XSegment compact>Here is some text</XSegment>
+                <Element is={Segment} raised color='black' canvas>
+                  <XButton text='Button 2' />
+                </Element>
               </Element>
             </Frame>
           </GridColumn>
           <GridColumn width='3'>
             <Toolbox></Toolbox>
-            {/* <SettingsPanel></SettingsPanel> */}
+            <SettingsPanel></SettingsPanel>
           </GridColumn>
         </Grid>
       </Editor>
