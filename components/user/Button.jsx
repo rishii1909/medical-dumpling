@@ -4,7 +4,7 @@ import { useNode } from "@craftjs/core";
 import ContentEditable from 'react-contenteditable'
 
 
-export const XButton = ({color, text}) => {
+export const XButton = (props) => {
     const { connectors: {connect, drag}, selected, dragged, actions: {setProp} } = useNode((state) => ({
         selected: state.events.selected,
         dragged: state.events.dragged
@@ -20,11 +20,11 @@ export const XButton = ({color, text}) => {
         onClick={e => setEditable(true)}
         className='button-wrapper'
         >
-            <Button color={color}> 
+            <Button {... props}> 
             
             <ContentEditable
             disabled={!editable}
-            html={text} 
+            html={props.text} 
             onChange={e => 
               setProp(props => 
                 props.text = e.target.value.replace(/<\/?[^>]+(>|$)/g, "")  

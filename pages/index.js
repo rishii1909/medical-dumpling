@@ -3,12 +3,13 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { SettingsPanel } from '../components/Settings'
 import { Toolbox } from '../components/Toolbox'
-import { Button, Container, Grid, GridColumn, Header, Segment } from 'semantic-ui-react'
+import { Button, Container, Divider, Grid, GridColumn, Header, Segment, Icon, HeaderSubheader, HeaderContent } from 'semantic-ui-react'
 import { XButton } from '../components/user/Button'
 import { XContainer } from '../components/user/Container'
 import 'semantic-ui-css/semantic.min.css';
 import { XSegment } from '../components/user/Segment'
-import {Editor, Frame, Element} from "@craftjs/core";
+import { XDivider } from '../components/user/Divider'
+import {Editor, Frame, Element, Canvas} from "@craftjs/core";
 
 
 
@@ -19,16 +20,19 @@ export default function Home() {
         <Grid celled className='full-height'>
           <GridColumn width='13'>
             <Frame>
-              <Element is={Segment} className='full-height' raised color='black' canvas>
-                  <XSegment className='min-full-height' basic>
-                  Add content here
-                  </XSegment>
+              <Element is={Container} className='full-height flex-cont' raised color='black' canvas>
+              <div className='full-height red'>
+              <Header as='h2' icon>
+                <Icon name='add circle' />
+                <HeaderContent>Add content here</HeaderContent>
+              </Header>
+              </div>
               </Element>
             </Frame>
           </GridColumn>
           <GridColumn width='3'>
+            <SettingsPanel></SettingsPanel>
             <Toolbox></Toolbox>
-            {/* <SettingsPanel></SettingsPanel> */}
           </GridColumn>
         </Grid>
       </Editor>
