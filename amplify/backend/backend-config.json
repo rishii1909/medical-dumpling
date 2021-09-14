@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual"
+    }
+  },
+  "auth": {
+    "gpliasonb6ec4d88": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "gplstatic": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.footer_container {
+    background-color: #1f1f1f;
+    width: 100%;
+    color : rgb(235, 235, 235) !important;
+    text-align : center;
+}
+.footer_sub_container {
+    padding : 2em 0.4em;
+}
+.light_gray{
+    background-color: #333333;
+    padding : 2em 0.3em !important;
+    width: 100%;
+
+}
+.light_gray > div {
+    padding: 0px !important;
+}
+.flex_justify_center{
+    padding : 1.2em 0.3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.social_icons{
+    background-color: floralwhite;
+    opacity: 0.75 !important;
+    color : #1f1f1f;
+    height: 20px;
+    width: 20px;
+    margin: 0.3em 0.8em !important;
+    transition: 0.2s ease-in;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.social_icons:hover {
+    opacity: 1 !important;
+}

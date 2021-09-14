@@ -1,0 +1,18 @@
+projects:
+  gp_liaison_cms:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: ap-south-1
+        apiId: xbid6smjv5gzvmlhytijfk7t74
+        maxDepth: 4
+extensions:
+  amplify:
+    version: 3

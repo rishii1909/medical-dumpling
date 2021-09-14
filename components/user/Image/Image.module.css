@@ -1,0 +1,18 @@
+
+.image_wrapper{
+  width: fit-content ;
+}
+.image_wrapper_fullWidth{
+  width: 100% ;
+  margin: 0.3em;
+}
+
+
+.image_wrapper img[src=""], .image_wrapper_fullWidth img[src=""]{
+  background-color: #815219;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%237B7B7B3B' stroke_width='3' stroke_dasharray='4%2c8' stroke_dashoffset='0' stroke_linecap='square'/%3e%3c/svg%3e");
+  border-radius: 8px;
+  padding: 1em;
+  padding: 80px !important;
+  margin: 50px !important;
+}

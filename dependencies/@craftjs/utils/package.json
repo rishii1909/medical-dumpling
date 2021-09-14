@@ -1,0 +1,65 @@
+{
+  "_from": "@craftjs/utils@^0.1.0-beta.17",
+  "_id": "@craftjs/utils@0.1.0-beta.20",
+  "_inBundle": false,
+  "_integrity": "sha512-KevLljnpEvHxpB2nxRZyQG2i4GDivIkY58depi+ynQP2ALonNuxEGVO2QsuDJ+p1z4eOtv0Xi/D3o6Qr84eAzQ==",
+  "_location": "/@craftjs/utils",
+  "_phantomChildren": {
+    "@types/prop-types": "15.7.4",
+    "@types/scheduler": "0.16.2",
+    "csstype": "3.0.8"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@craftjs/utils@^0.1.0-beta.17",
+    "name": "@craftjs/utils",
+    "escapedName": "@craftjs%2futils",
+    "scope": "@craftjs",
+    "rawSpec": "^0.1.0-beta.17",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.0-beta.17"
+  },
+  "_requiredBy": [
+    "/@craftjs/core"
+  ],
+  "_resolved": "https://registry.npmjs.org/@craftjs/utils/-/utils-0.1.0-beta.20.tgz",
+  "_shasum": "2ba535b043e45368dc60bcf06614dab5ba2d0899",
+  "_spec": "@craftjs/utils@^0.1.0-beta.17",
+  "_where": "C:\\Users\\hrush\\Desktop\\DOCKYARD\\gp-liason\\node_modules\\@craftjs\\core",
+  "author": {
+    "name": "Prev Wong",
+    "email": "prevwong@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/react": "^17.0.5",
+    "immer": "^8.0.1",
+    "lodash": "^4.17.20",
+    "nanoid": "^3.1.23",
+    "shallowequal": "^1.1.0",
+    "tiny-invariant": "^1.0.6"
+  },
+  "deprecated": false,
+  "description": "Utilities used internally across the craft.js monorepo",
+  "gitHead": "56b560de76759a70862524ef7e08f9c30c28d636",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "name": "@craftjs/utils",
+  "nohoist": [
+    "immer",
+    "immer/**"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production ../../scripts/build.sh",
+    "clean": "rimraf lib dist",
+    "dev:yalc": "../../scripts/yalc.sh",
+    "start": "cross-env NODE_ENV=development ../../scripts/build.sh"
+  },
+  "types": "./lib/index.d.ts",
+  "version": "0.1.0-beta.20"
+}
