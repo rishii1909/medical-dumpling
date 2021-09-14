@@ -18,7 +18,6 @@ export const SettingsPanel = () => {
         let selected;
     
         if ( currentNodeId ) {
-            console.log(state.nodes[currentNodeId].data)
             if(state.nodes[currentNodeId].data.displayName.includes("X")){
                 selected = {
                     id: currentNodeId,

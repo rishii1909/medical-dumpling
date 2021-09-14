@@ -10,3 +10,12 @@ export const XDivider = (props) => {
         </div>
     )
 }
+
+export const XDividerReadOnly = (props) => {
+    const { connectors: {connect, drag} } = useNode();
+    return(
+        <div ref={ ref => connect(drag(ref))}>
+        <Divider {... props}>{props.children}</Divider>
+        </div>
+    )
+}
